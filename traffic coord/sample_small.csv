@@ -1,0 +1,6 @@
+edge_id,from,to,capacity,status
+E1,N1,N2,10,open
+E2,N1,N3,8,open
+E3,N2,N3,2,open
+E4,N2,N4,8,open
+E5,N3,N4,9,open
