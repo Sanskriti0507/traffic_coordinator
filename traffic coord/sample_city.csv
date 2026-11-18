@@ -1,0 +1,34 @@
+# Sample city network (junction names and capacities are invented).
+# Capacity = vehicles per minute. Entries bring traffic in, exits take it out.
+NODE,ISBT
+NODE,Rispana
+NODE,Premnagar
+NODE,Dilaram
+NODE,Survey
+NODE,Ballupur
+NODE,ClockTower
+NODE,RaceCourse
+NODE,Rajpur
+NODE,MussoorieRd
+ENTRY,ISBT,30
+ENTRY,Rispana,25
+ENTRY,Premnagar,20
+EXIT,Rajpur
+EXIT,MussoorieRd
+edge_id,from_node,to_node,capacity,time_window,road_type,status
+R1,ISBT,ClockTower,22,peak,arterial,open
+R2,ISBT,Dilaram,12,peak,collector,open
+R3,Rispana,Survey,15,peak,arterial,open
+R4,Rispana,Dilaram,10,peak,collector,open
+R5,Premnagar,Ballupur,14,peak,arterial,open
+R6,Premnagar,Survey,8,peak,collector,open
+R7,Dilaram,ClockTower,9,peak,collector,open
+R8,Survey,ClockTower,12,peak,arterial,open
+R9,Survey,RaceCourse,10,peak,collector,open
+R10,Ballupur,RaceCourse,9,peak,collector,open
+R11,Ballupur,Dilaram,6,peak,local,open
+R12,RaceCourse,ClockTower,7,peak,local,closed
+R13,ClockTower,Rajpur,20,peak,arterial,open
+R14,ClockTower,MussoorieRd,10,peak,arterial,incident
+R15,RaceCourse,Rajpur,10,peak,collector,open
+R16,RaceCourse,MussoorieRd,8,peak,collector,open
